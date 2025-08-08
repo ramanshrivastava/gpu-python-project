@@ -32,7 +32,7 @@ Tested on **Apple M1 Pro** with MPS backend:
 ### Local Installation
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/ramanshrivastava/gpu-python-project.git
 cd gpu-python-project
 
 # Create and activate virtual environment
