@@ -1,0 +1,59 @@
+{
+  "hardware": {
+    "model": "MacBook Pro",
+    "chip": "Apple M4 Pro",
+    "cpu_cores": "14 (10 performance and 4 efficiency)",
+    "memory": "48 GB",
+    "gpu_chipset": "Apple M4 Pro",
+    "gpu_cores": "20",
+    "metal_support": "Metal 4"
+  },
+  "metal": {
+    "available": true,
+    "version": "Metal 4",
+    "device_count": 1
+  },
+  "pytorch_mps": {
+    "installed": true,
+    "version": "2.9.1",
+    "mps_built": true,
+    "mps_available": true,
+    "mps_functional": true,
+    "test_passed": true
+  },
+  "mlx": {
+    "installed": false,
+    "error": "MLX not installed (pip install mlx)"
+  },
+  "tensorflow": {
+    "installed": false,
+    "error": "TensorFlow not installed"
+  },
+  "jax": {
+    "installed": false,
+    "error": "JAX not installed"
+  },
+  "benchmarks": {
+    "matmul_512x512": {
+      "cpu_ms": 0.253,
+      "mps_ms": 0.372,
+      "speedup": 0.68
+    },
+    "matmul_1024x1024": {
+      "cpu_ms": 1.119,
+      "mps_ms": 2.115,
+      "speedup": 0.53
+    },
+    "matmul_2048x2048": {
+      "cpu_ms": 7.511,
+      "mps_ms": 5.108,
+      "speedup": 1.47
+    },
+    "matmul_4096x4096": {
+      "cpu_ms": 51.24,
+      "mps_ms": 20.44,
+      "speedup": 2.51
+    },
+    "mlx_error": "No module named 'mlx'"
+  }
+}
